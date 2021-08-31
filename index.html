@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#home" id="navbar-logo">milovanovic<span class='logo'>/</span>f</a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-links" id="homepage">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="https://github.com/milovanovicf" target='_blank'class="navbar-links" id="projects">Projects</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-links" id="about">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero" id="home">
+      <div class="hero-container">
+        <span id="lines">&#8213</span>
+        <p class="hero-heading">
+          Hello my name is Filip i am a 23 year old junior Web Developer and
+          Software Tester based in Belgrade, Serbia. I have diverse set of
+          skills that include <span>HTML & CSS</span> +
+          <span>JavaScript</span> and a bit of <span>PHP</span> and
+          <span>Wordpress</span>
+          . For automatic and manual testing I use
+          <span>Cypress, Jira, Testrail</span> etc. All my projects are
+          available in the Projects section. If you want to find out more down
+          bellow are all my contacts so feel free to contact me.
+        </p>
+        <span id="lines">&#8213</span>
+      </div>
+    </div>
+    <div class="content">
+        <h2>Featuring</h2>
+        <div class="slider-container">
+          <div class="left-slide">
+            <div>
+              <h1>Score Keeper</h1>
+              <p>A score keeping app with created mostly with JavaScript and Bulma framework</p>
+            </div>
+            <div>
+              <h1>Color Randomizer</h1>
+              <p>Colorful HEX code generator created mostly with JavaScript</p>
+            </div>
+            <div>
+              <h1>Tip Calculator</h1>
+              <p>A simple tip calculator created mostly with JavaScript</p>
+            </div>
+            <div>
+              <h1>Movies you might like</h1>
+              <p>My passion for movies and cinema inspired me to make a blog-type website that posts list about all kinds of movies and shows where peple can discuss about all kinds of cinema related topics</p>
+            </div>
+          </div>
+          <div class="right-slide">
+            <div style="background-image: url(images/movies.png)"></div>
+            <div style="background-image: url(images/tipCalc.png)"></div>
+            <div style="background-image: url(/images/colorRando.png)"></div>
+            <div style="background-image: url(/images/scoreKeeper.png)"></div>
+          </div>
+          <div class="action-buttons">
+            <button class="down-btn"><i class="fas fa-chevron-down"></i></button>
+            <button class="up-btn"><i class="fas fa-chevron-up"></i></button>
+          </div>
+        </div>
+    </div>
+    <footer class="footer-section">
+      <h2>Let's be Internet BFFS</h2>
+      <div class="footer-links">
+        <a href="#"target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="#"target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-at"></i></a>
+      </div>
+    </footer>
+    <script src="code.js"></script>
+  </body>
+</html>
