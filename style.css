@@ -186,6 +186,12 @@ body {
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  .hero.active {
+    padding-top: 350px;
+    padding-bottom: 200px;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .hero {
@@ -344,11 +350,53 @@ button:hover {
 button:focus {
   outline: none;
 }
-/* 
-@media screen and (max-width: 960px) {
- 
-} */
 
+@media screen and (max-width: 1300px) {
+  .slider-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .left-slide > div h1,
+  div p {
+    font-size: 1.5em;
+  }
+  .left-slide > div p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .slider-container {
+    max-width: 760px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .slider-container {
+    max-width: 650px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slider-container {
+    max-width: 490px;
+  }
+
+  .right-slide div {
+    background-size: 300px 300px;
+    transition: all 0.3s ease;
+  }
+  .slider-container .action-buttons button {
+    left: 37.3%;
+    top: 76.5%;
+  }
+
+  .left-slide > div p {
+    font-size: 0.9em;
+  }
+}
 .footer-section {
   height: 250px;
   display: flex;

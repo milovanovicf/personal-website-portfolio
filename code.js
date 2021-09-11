@@ -17,6 +17,7 @@ slideLeft.style.top = `-${(slidesLenght - 1) * 450}px`;
 const mobileMenu = () => {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
+  document.querySelector(".hero").classList.toggle("active");
 };
 
 const changeSlide = (direction) => {
@@ -42,5 +43,6 @@ const changeSlide = (direction) => {
 };
 
 menu.addEventListener("click", mobileMenu);
+
 upBtn.addEventListener("click", () => changeSlide("up"));
 downBtn.addEventListener("click", () => changeSlide("down"));
